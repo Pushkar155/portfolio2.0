@@ -1,0 +1,154 @@
+.contact{
+    height: 100vh;
+    width: 100%;
+}
+.contact>video{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    position:absolute;
+}
+.content{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    color:white;
+}
+
+.content_up{
+    width: 100%;
+    height: 90vh;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.content_down{
+    width: 100%;
+    height: 10vh;
+}
+.content_up{
+    display: flex;
+}
+.content_left{
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    padding: 40px;
+    gap: 3rem;
+    border-bottom: 2px white;
+}
+.content_left>p{
+    font-family:'Tektur', cursive;
+}
+.content_right{
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.content_right>input{
+    width: 80%;
+    height: 6vh;
+}
+.content_right>textarea{
+    width: 80%;
+    height: 25vh;
+}
+.content_right>input{
+    background: none;
+    /* cursor: pointer; */
+    border: 3px solid greenyellow;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    outline: none;
+
+}
+.content_right>textarea{
+    background: none;
+    /* cursor: pointer; */
+    border: 3px solid greenyellow;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    outline: none;
+}
+.input1:hover{
+    border-color: white;
+}
+.message:hover{
+    border-color: white;
+}
+
+.but{
+    height: 5vh;
+    width: 20vh;
+    background-color: greenyellow;
+    border: 3.5px solid white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 900;
+    margin: 5px;
+}
+.but:hover{
+    background-color: white;
+    color: black;
+    border-color: greenyellow;
+}
+.content_down{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+.content_down_left{
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: greenyellow;
+}
+.content_down_right{
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.content_down_right>a{
+    text-decoration: none!important ;
+}
+@media all  and (max-width: 500px){
+    .content_down{
+        flex-direction: column;
+    }
+    .content_right>input{
+        font-size: 10px;
+        height: 3vh;
+    
+    }
+    .content_right>textarea{
+        font-size: 8px;
+        height: 15vh;
+    }
+    .but{
+        height: 4vh;
+        width: 8vh;
+        background-color: greenyellow;
+        border: 2px solid white;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 10px;
+        margin: 5px;
+    }
+    .content_left>h1{
+        font-size: 26px;
+    }
+    .content_down_left>h1{
+        font-size: 26px;
+    }
+}
+
